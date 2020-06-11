@@ -1,0 +1,37 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+    name: myrs
+spec:
+  replicas: 4
+  selector:
+     matchLabels:
+       app: web
+       env: dev
+  template:
+    metadata:
+      name: mypod
+      labels:
+        app: web
+        env: dev
+    spec:
+      containers:
+        - name: mycont
+          image: lerndevops/samplepyapp:v1
+          ports:
+           - containerPort: 3000
+
+---
+
+kind: Service 
+apiVersion: v1
+metadata: 
+  name: mysvc
+spec:
+  type: NodePort
+  ports: 
+    - port: 3000
+      nodePort: 30005
+  selector:
+     app: web
+     env: dev
