@@ -1,0 +1,25 @@
+install  docker-->dockerinstall.sh
+
+
+need container that should have everything, so  befire that we need image
+
+get image:
+-----------
+hubdocker.com--->explore
+
+pull docker image 
+------------------
+ docker pull user/imagename
+
+
+Run  image as a Container :
+----------------------------
+
+docker run -d -p user/image
+
+
+
+
+
+
+
