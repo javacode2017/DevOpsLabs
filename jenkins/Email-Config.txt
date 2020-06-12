@@ -2,7 +2,12 @@ Jenkins Email Configuration
 
 Manage Jenkins --> Configure System --> Extended E-mail Notification
 
-	SMTP server: smtp.gmail.com  (click on Advanced for below options)
+	SMTP server: smtp.gmail.com  (click on Advanced for below options and give sender details)
+	Default user email suffix : anyname
+	Default Content type : any (plaintext)
+	
+	Default Receipients : bhujatha.edu@gmail.com,amarnadha1225@gmail.com
+	
 	Use SMTP Authentication (select this option)
 		username: <your gmail user>
 		password: < your gmail password>
