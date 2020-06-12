@@ -1,0 +1,20 @@
+When we call  Security two things will come into picture
+
+a) Authentication
+  (who are you)--with validating credentials it allow us to login.
+b)Autherization
+    allowing specific pages to visit.
+    
+    
+ 1)   Add more users :
+    ------------------
+    Manage Jenkins ---->Manage Users---->Create User
+    
+    Note : when user is added he/she won't get access to login. because Autherization access is require.
+    
+2)  Provide Autherization to the user:
+    -----------------------------------
+    Manage Jenkins--> Configure Global Security 
+    
+    
+    
