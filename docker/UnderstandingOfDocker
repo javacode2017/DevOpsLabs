@@ -1,0 +1,62 @@
+1
+=====
+Earlier days to host an pplication will user a physical server (300GB RAM. 1TB HD,32 cpu's).
+in order to deploy a java based application in physical server , we need to use  OS, Java ,Tomcat  ,War file  etc.
+
+Q) to deploy single application , do we required all the space ?
+No, 
+So, remainign space will be wasted.
+
+q} can i deploy another application in remaining space ? is this good to go?
+
+No, we can't deploy.
+One app--> one server
+
+2
+=========
+Over the years Virtualization came into picture.
+
+by using  virtualization we can do partition , and can use reqired space and give remaining space other to deploy their appliation.
+
+in order to perform virtualization need to install  Hypervation on the mechine, then on ly it will allow to perform VM.
+it is hardware level Virtualization.
+
+
+
+Booting time :
+=======================
+ 
+ to launch an application it needs to run OS -->tomcat-->then app
+ So, it is time taken process.
+ 
+ 
+ Dynamic Allowcation :
+ =======================
+ more users are accessing my application and disk space is not enough , can i extend my harddisk.
+ No, dynamically not possible.
+ 
+ 
+ Scalability (increasing capacity)
+ ================================
+ Offers --> more customers are using the application so, need to increase the VM.
+ in order to increase 10 more VM's how much time it takes?
+ 
+ 
+ Containarization
+ ==================
+ ======================
+ 
+ image  will be changed as container and run the application.
+ 
+ 
+ 
+ Docker is a containaraization tool ,provide capability to create container and run conatiner and manage them.
+ 
+ docker itself enable virtualization.
+ 
+ docker OS level virtualization.
+ 
+ the OS inside container is lightweight OS.
+ 
+ 
+
