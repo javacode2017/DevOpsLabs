@@ -1,0 +1,105 @@
+Docker :
+-------
+
+
+
+Image :
+    Image is an application , that contains all supported dependencies.
+    tomcat --> OS, java,tomcat and application.
+    
+    
+    
+    
+    
+    Container :
+    ------------
+    
+    > docker images
+    
+    How to run a container using images ?
+    >docker run -d -p image
+    
+    container can be launched in 2 ways
+    1. Detatched(-d)
+    (readymade image)
+    if the image is production ready, those kinds of containers will run detatched mode.
+    2.Interactive
+    (customize image)
+      >docker run -it centos
+      
+      
+      
+      check container details inside
+      ===============================
+      
+      > cat /etc/os-release
+      displays OS name
+      
+      
+      and download required s/w for the container
+      ---------------------------------------------
+      yum install update
+      
+      
+      come out from container to host OS:
+      ctrl +p+q
+      
+    > docker ps (shows list of running cotainers)
+    
+    >docker ps -a(shows list of stopped containers)
+    
+    
+    stop container 
+    -------------
+    > docker stop container_id
+    
+    remove container
+    -----------------
+    > docker rm -f container_id
+    
+    
+    publish container along with s/w application  inside it
+    -------------------------------------------------------
+   > docker run --name bhujatha -d -P
+   
+   by default when we launch a container it won't allow it's ip address to access inside apps. 
+   in order to access apps with it IP need to launch container in publish mode(-P).
+   it will create seperate port number to access container.
+   
+   
+   launch container with our own IP address :
+   ------------------------------------------
+   >docker run --name bhujatha1  -d -p 1234:80 image_name
+   
+   
+   Entering into running container 
+   --------------------------------
+   >docker exec container_id  (perform  require action)
+   
+   > docker exec container_id  touch abcd.txt
+   
+   view file exit or not :  docker exce container_id ls
+   
+   entering into running container into iterative mode and open bash
+   ------------------
+   >docker exec -it container_id bash
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   ================IMAGE====================
+   
+   
+   
+    
+   
+   
+    
+    
+    
+    
