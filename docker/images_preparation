@@ -1,0 +1,9 @@
+image-->container--->image
+
+select os
+run it as a container in interactive mode
+make changes
+save as a new image
+
+
+>docker commit -m"anyname" container_id  give_new_name_for_container
