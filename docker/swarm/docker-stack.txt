@@ -9,6 +9,7 @@ create services in swarm using compose file ( declarative model )
         docker stack deploy -c compose.yml mystack
         docker stack ls
         docker stack ps mystack
-        docker stack services mystack
+        docker stack services mystack        
+                        shows services related to stack
         docker stack rm mystack
         docker service scale mysvc=3
