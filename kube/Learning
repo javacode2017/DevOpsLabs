@@ -1,0 +1,10 @@
+Kuberneties:
+------------
+it is a container management tool
+
+docker  vs  kube
+==================
+by default in kuberneties master node will not take the work load. it does the deployment on nodes only.
+
+but in docker manager alos will take work load by default.
+
