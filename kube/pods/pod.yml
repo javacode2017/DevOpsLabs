@@ -11,3 +11,27 @@ spec:
     image: tomcat
     ports:
      - containerPort: 8080
+     =================================
+     
+     
+     
+     apiVersion -->by using this we connect to api server,
+     these version changes from pod to pod  | services |Deployment etc
+     
+     
+     Kind --> what kind of resource is using
+     
+     metadata --> data about object
+     
+     labels is alias name 
+     
+     spec---->represents what type of image running inside pod
+     
+     
+     How to run pod:
+      kubectl create -f file_name
+      example:
+     kubectl create -f pod.yml
+     
+     
+     
