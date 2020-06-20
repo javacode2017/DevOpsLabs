@@ -1,3 +1,11 @@
+create pod:
+===========
+1)  vi pod.yml
+2)  kubectl create filename.yml
+
+
+
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -31,7 +39,23 @@ spec:
      How to run pod:
       kubectl create -f file_name
       example:
-     kubectl create -f pod.yml
+   >>  kubectl create -f pod.yml
+     
+     
+   >> kubectl get pods
+     (displays runing pods)
+     
+     
+     
+     view details about specific pod:
+    >> kubectl describe pods podname
+    
+    >>kubectl get pods -o wide
+    
+    delete pod :
+    >>kubectl delete pods pod_name
+    
+     
      
      
      
