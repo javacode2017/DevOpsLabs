@@ -1,5 +1,10 @@
 kubectl get all --all-namespaces
 
+kubectl get componentstatus
+kubectl cluster-info
+kubectl cluster-info dump
+kubectl cluster-info dump  --output-directory=/path/to/cluster-state
+
 kubectl api-resources
 kubectl api-resources --namespaced=true      # All namespaced resources
 kubectl api-resources --namespaced=false     # All non-namespaced resources
