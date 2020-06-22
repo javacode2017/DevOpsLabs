@@ -123,6 +123,41 @@ inventory  =  /etc/root/.
 >>cd /root/bhujatha
 bhujatha>>ansible --version
 
+==copy config.xml file into user(bhujatha)  directory
+
+bhujatha>>mv ansible.cfg ansible.cfg
+
+bhujatha>ls -l
+config.xml
+
+here change the configuration file:
+==================================
+inventory = /root/bhujatha/inv
+
+
+
+after changing cfg file connecting server from user own directory
+===========================
+
+bhujatha>>ansible aws -m ping -u devops -k -vvv
+
+
+
+
+or
+to access hosts without  username & password
+hosts file
+=========
+[aws]
+10.10.101.10  ansible_ssh_user=devops ansible_ssh_password=bhujatha
+
+=======
+
+bhujatha>>ansible aws -m ping
+
+
+
+
 
 
 
