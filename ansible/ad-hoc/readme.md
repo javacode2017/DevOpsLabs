@@ -1,6 +1,9 @@
 `Ad-Hoc commands are one-liner ansible commands that performs one task on the target host.`
 `It allows you to execute simpleone-line task against one or group of hosts defined on the inventory file configuration.`
 
+Ad-Hoc commands everything will be performed in controller mechine, and that will be triggered in host servers.
+
+
 ## Ansible Ad-Hoc Commands to use when SSH Keys configured with target hosts
 
 ```
