@@ -1,9 +1,12 @@
 Install Plugins required for CI Pipeline
 
 	Manage Jenkins --> manage plugins -- Available -- search & install the below
-		pmd -- install without restart
+		pmd -- install without restart			
 		cobertura -- install without restart
 		Build Pipeline Plugin  -- install without restart
+		
+1.pmd (program mistake detector)
+	it is used for codereview, by this it will check uselessspaces, unused try{}catch(){} and finally{} and etc,
 
 			
 =================================================================================================================
