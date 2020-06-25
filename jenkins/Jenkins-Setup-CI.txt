@@ -8,6 +8,10 @@ Install Plugins required for CI Pipeline
 1.pmd (program mistake detector)
 	it is used for codereview, by this it will check uselessspaces, unused try{}catch(){} and finally{} and etc,
 
+2.cobertura 
+	it is used for code coverage
+	
+
 			
 =================================================================================================================
 
