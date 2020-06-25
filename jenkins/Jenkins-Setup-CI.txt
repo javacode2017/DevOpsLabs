@@ -9,7 +9,11 @@ Install Plugins required for CI Pipeline
 	it is used for codereview, by this it will check uselessspaces, unused try{}catch(){} and finally{} and etc,
 
 2.cobertura 
-	it is used for code coverage
+	it is used for code coverage, it represents how much % code tested as part of unit testing.
+
+3.Build Pipeline 
+		check flow of jobs
+	
 	
 
 			
