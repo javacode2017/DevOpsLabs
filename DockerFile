@@ -1,0 +1,55 @@
+FROM java:8
+
+EXPOSE 8080
+
+# add jar into target directory and map these jar into docker container jar
+ADD target/exam.jar exam.jar
+
+# entrypoint specify what it is. i.e, it is java jar and name is exam.jar
+ENTRYPOINT ["java","-jar","exam.jar"]
+
+--
+
+
+> docker login
+
+>>go to the directory where dockerfile is located
+
+>>> docker build -t jarname .
+
+Status: Downloaded newer image for java:8
+ ---> d23bdf5b1b1b
+Step 2/4 : EXPOSE 8080
+ ---> Running in f61bc55e4bed
+Removing intermediate container f61bc55e4bed
+ ---> 4ae6d8d8dd19
+Step 3/4 : ADD target/exam.jar exam.jar
+ ---> 1c61da1e4f1c
+Step 4/4 : ENTRYPOINT ["java","-jar","exam.jar"]
+ ---> Running in eed19f839c62
+Removing intermediate container eed19f839c62
+ ---> 358de20bcd4d
+Successfully built 358de20bcd4d
+
+
+
+>> docker images
+
+>> tag local image with dockerhub repository
+
+C:\Users\x1 carbon\Desktop\test\exam>docker push bhujatha/dockerimgexam
+The push refers to repository [docker.io/bhujatha/dockerimgexam]
+9bf6983f57c2: Pushed    35c20f26d188: Mounted from library/java                                                                                                                                 c3fe59dd9556: Mounted from library/java                                                                                                                                 6ed1a81ba5b6: Mounted from library/java                                                                                                                                 a3483ce177ce: Mounted from library/java                                                                                                                                 ce6c8756685b: Mounted from library/java                                                                                                                                 30339f20ced0: Mounted from library/java                                                                                                                                 0eb22bfb707d: Mounted from library/java                                                                                                                                 a2ae92ffcd29: Mounted from library/java                                                                                                                                 latest: digest: sha256:d83e5278fe2bf820ba081fd4439d7785d4b71cdd317a656d3b22ace7b08e6607 size: 2212
+
+
+
+
+
+
+
+>>  download and run docker image
+
+C:\Users\x1 carbon\Desktop\test\exam>docker run -p 8080:8080 bhujatha/dockerimgexam
+
+
+access via localhost
